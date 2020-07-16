@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>karachiBuisnessExchange</title>
+    <link rel="icon" href="images/icon1.svg" style="width: 100%;" type="image/icon type">
     <link href="style.css" rel="stylesheet">
     <!-- Bootstrap CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,22 +13,23 @@
 </head>
 <body>
         
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" >
+    <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 200px;" alt="logo1"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo1"></a>
+        <!--a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo1"></a-->
         <span class="navbar-text text-dark "><h3>Karachi Buisness Exchange</h3></span>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item ">
-                <a class="nav-link text-dark" id="active" href="#">Home</a>
+                <a class="nav-link text-dark" id="active" href="#carouselExampleControls">Home</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link text-dark" href="#">Blog</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">About</a>
+                  <a class="nav-link text-dark" href="#headingabout">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +41,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">Contact</a>
+                  <a class="nav-link text-dark" href="#footer5">Contact</a>
               </li>
         </ul>
       </div>
@@ -70,10 +72,10 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div id="heading">
-            <h1>INTRO<span>DUCTION</span> </h1>
-    </div>
-    <div id="writting">
+    <div class="heading">
+        <h1>Intro<span>duction</span> </h1>
+</div>
+    <div class="writting">
         <p> We provide industrial and consumer supprot services and We are providing online shopping market under the latest requirements
             , giving people a chance to live a dignified life and spreading happiness.
         </p>
@@ -84,10 +86,10 @@
         <p>Please Enter the requirement of your purchase and sale details on our web site We will buy and sell your items at the best possible price according to your wishes
             by supporting our causes and enabling us to serve the needs of people in need.</p>
     </div>
-    <div id="heading">
+    <div class="heading">
         <h1>Feature Buis<span>ness Services</span> </h1>
 </div>
-<div id="writting">
+<div class="writting">
     <p> We provide industrial and consumer supprot services and We are providing online shopping market under the latest requirements
         , giving people a chance to live a dignified life and spreading happiness.
     </p>
@@ -98,10 +100,10 @@
     <p>Please Enter the requirement of your purchase and sale details on our web site We will buy and sell your items at the best possible price according to your wishes
         by supporting our causes and enabling us to serve the needs of people in need.</p>
 </div>
-<div id="heading">
+<div class="heading" id="headingabout" >
     <h1>About Buis<span>ness Exchange</span> </h1>
 </div>
-<div id="writting">
+<div class="writting">
 <p> We provide industrial and consumer supprot services and We are providing online shopping market under the latest requirements
     , giving people a chance to live a dignified life and spreading happiness.
 </p>
@@ -116,19 +118,18 @@
 <footer class="footer bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-sm contact text-secondary">
-                Head Office,<br>
-                A-25, Nagan Chowrangi Karachi, Pakistan<br>
-                UAN: 111-729-526 (+0092-213) 4130786-90 <br>
-                CELL: 92-311-1729526 <br> USA NO +1(716)941 7792 <br> UK NO (+44)115 970 6256 <br>
-                info@karachiBuisnessExchange.com
-
-            </div>
             <div class="col-sm heading1">
                 <h4>Useful Links</h4>
-                <hr>
+          <div class="col-sm text-secondary">
+            Head Office,<br>
+            A-25, Nagan Chowrangi Karachi, Pakistan<br>
+            UAN: 111-729-526 (+0092-213) 4130786-90 <br>
+            CELL: 92-311-1729526 <br> USA NO +1(716)941 7792 <br> UK NO (+44)115 970 6256 <br>
+            info@karachiBuisnessExchange.com
+          </div>
             </div>
-            <div class="col-sm heading1 footerLinks">
+          <div class="col-sm">
+            <div class="col-sm heading1 footerLinks" id="footer5">
                 <h4>Contact with us</h4>
                 <br>
                 <ul class="footerLinks">
@@ -138,8 +139,16 @@
                     <li><a href="https://www.youtube.com" target="_blank"><img src="images/youtubeLogo.png" alt="img"></a></li>
                 </ul>
             </div>
+          </div>
         </div>
-    </div>
+        <div class="row text-secondary" id="copyright-logo">
+            <img src="images/logo.png" class="center" style="width: 200px;" alt="logo1">
+          </div>
+          <div class="row text-center text-light" id="copyright">
+            <div class="col-sm">
+           Copyright &copy; 2020 -karachi Buisness Exchange
+          </div>
+      </div>
 </footer>
 
 
